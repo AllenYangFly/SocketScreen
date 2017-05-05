@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="components/codemirror/lib/codemirror.css">
+    <script src="components/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="components/codemirror/theme/lesser-dark.css">
+    <script src="components/codemirror/mode/css/css.js"></script>
+    <script src="components/codemirror/mode/javascript/javascript.js"></script>
+</head>
+<body>
+   
+    
+    <textarea id="script_once_code">
+         
+    </textarea>
+    <script>
+    var editor = CodeMirror.fromTextArea(document.querySelector("#script_once_code"), { 
+        lineNumbers: true,
+        mode:"javascript",　
+        lineWrapping:false, 
+        theme: "lesser-dark"
+    });
+     </script>
+</body>
+</html>
